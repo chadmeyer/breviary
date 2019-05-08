@@ -1,0 +1,35 @@
+We want to design a modular method of typesetting an office, or ultimately
+a book of offices.
+
+There might be something as wide as a week, but we'll skip that for now.
+
+There is a day.  A day can have multiple offices.  A day has a title (e.g. 
+Fifth Sunday of Easter).  A day can have multiple offices.
+
+An office has an hour/title (Office of Readings, Midday prayer, etc.)  It has
+an introduction, a Hymn, Some psalms/canticles, a reading or readings with
+responsories, A Gospel canticle, Intercessions, the Our Father, and prayer.
+
+A hymn can have a text, and potential metadata.
+
+Psalms and canticles have an antiphon, the psalm text (broken up into stanzas)
+the gloria, and possible line markings.  The Gospel canticle is set like any
+other canticle.
+
+A reading has a citation, the text, and a responsory.
+
+There are different kinds of responsories, at the major offices there is a verse
+in two parts which is repeated, a second verse with the second part of the first
+verse repeated, the first half of the Gloria and the first verse again.  In a
+minor office, there are just two verses.  In the office of readings, there is 
+a verse in two parts and then a second verse with the same second part as the
+first.  Finally on special occasions, there is a single line said in place of
+the responsory.
+
+Intercessions have an introductory text, a response, and a series of
+intercessions with two parts.
+
+In nearly every case, a part is optional.  In some cases there might want to
+be an "as in" note rather than the thing itself.  In many cases the things
+could be set out differently (verbose instructions, single or repeated antiphon)
+
