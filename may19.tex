@@ -13,23 +13,42 @@
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{4pt}
 \setlength{\vleftskip}{8pt}
-\setlength{\leftmargini}{5em}
+\setlength{\leftmargini}{4.5em}
+\newlength{\oldindent}
+
 
 \newcommand{\antiphon}[2]{
-	\begin{tabular}[h]{r p{4.25in}}
-		\sidestar{#1} & \textbf{#2}
-	\end{tabular}}
+	\setlength{\oldindent}{\vindent}
+	\setlength{\vindent}{0em}
+	\begin{verse}
+	\side{#1} \textbf{#2}
+	\end{verse}
+	\setlength{\vindent}{\oldindent}
+}
 \newcommand{\intercession}[2]{
 	\begin{tabular}[h]{r p{4.25in}}
 		\sidestar{Leader} & #1 \\
 		\sidestar{All} & #2
 	\end{tabular}}
 
+
+
+\newcommand{\psalm}[4][1]{%
+\setcounter{side}{#1}
+\psalmheading{#2}
+\antiphon{Leader #1}{#3}
+\begin{verse}
+#4
+\end{verse}
+\antiphon{All}{#3}
+}
+
 \setpdftargetpages
 
 \begin{document}
 \hourheading{Fifth Sunday of Easter}
 \prayerheading{INTRODUCTION}
+\hspace{\leftmargini}\rednote{(Make sign of cross)}\\
 \intercession{God, \rednote{+} come to my assistance}
 {Lord, make haste to help me.}\\
 \intercession{Glory to the Father, and to the Son and to the Holy Spirit:}
@@ -55,7 +74,7 @@ paschal victim, paschal bread; \\*
 with sincerity and love \\*
 eat we manna from above.
 \end{verse}
-\prayerheading{PSALMODY}
+%\prayerheading{PSALMODY}
 %\newpage
 \psalmheading{Psalm 110:1-5,7}
 \antiphon{Leader 1}{The Lord is risen and is seated at the right hand of God,
@@ -127,6 +146,7 @@ us into the kingdom of his Son, alleluia.}
 \antiphon{Leader 1}{Alleluia, our God is king; glory and praise to him,
 alleluia.}
 \setlength{\stanzaskip}{0.25\baselineskip}
+\vspace{-1.5\baselineskip}
 \begin{verse}
 \side{Leader 1} Alleluia. \\*
 \side{Side 1} Salvation, glory, and power to our God: \\*
@@ -183,9 +203,12 @@ one offering he has forever perfected those who are being sanctified.
 \sidestar{All} The Lord is risen, alleluia, alleluia.
 
 \psalmheading{\textbf{CANTICLE OF MARY}\\ Luke 1:49-55}
+\rednote{All stand}
 \antiphon{Leader}{I give you a new commandment: love one another as I have loved
 you, says the Lord, alleluia.}
+\setlength{\stanzaskip}{0.25\baselineskip}
 \begin{verse}
+\rednote{(Make sign of cross)}\\
 \side{All} My \rednote{+} soul proclaims the greatness of the Lord, \\*
 my spirit rejoices in God my Savior \\*
 for he has looked with favor on his lowly servant.
@@ -216,13 +239,14 @@ and to the Holy Spirit: \\*
 as it was in the beginning, is now, \\*
 and will be for ever. Amen.
 \end{verse}
+\setlength{\stanzaskip}{0.75\baselineskip}
 \antiphon{All}{I give you a new commandment: love one another as I have loved
 you, says the Lord, alleluia.}
 
 \prayerheading{INTERCESSIONS}
-\antiphon{Leader}{With joy in our hearts, let us call upon Christ the Lord, who
-died and rose again, and lives always to intercede for us:}\\*
-\begin{centering} \sidestar{All} \textit{Victorious King, hear our prayer.}\end{centering}
+\intercession{With joy in our hearts, let us call upon Christ the Lord, who
+died and rose again, and lives always to intercede for us:}
+{\textit{Victorious King, hear our prayer.}}
 
 \intercession{Light and salvation of all peoples, send into our hearts the fire of your Spirit}{as we proclaim your resurrection.}
 
@@ -244,9 +268,8 @@ kingdom of your glory.}
 \prayerheading{THE LORD'S PRAYER}
 \antiphon{Leader}{Gathering our prayer and praises into one, let us offer the
 prayer Christ himself taught us:}
-
-\sidestar{All}\\
-Our Father, who art in heaven, \\
+\begin{verse}
+\side{All} Our Father, who art in heaven, \\
 hallowed be thy name; \\
 thy kingdom come; \\
 thy will be done on earth \\
@@ -256,6 +279,7 @@ and forgive us our trespasses \\
 as we forgive those who trespass against us; \\
 and lead us not into temptation, \\
 but deliver us from evil.
+\end{verse}
 
 \prayerheading{CONCLUDING PRAYER}
 \sidestar{Leader}\\*
