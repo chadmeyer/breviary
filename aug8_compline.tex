@@ -1,0 +1,223 @@
+\documentclass[letterpaper,12pt]{extarticle}
+\usepackage[print]{booklet}
+\usepackage{xcolor}
+\usepackage{liturg}
+\usepackage{alltt}
+\usepackage{verse}
+%\usepackage{calc}
+%\usepackage{scrextend}
+
+\newcommand{\side}[1]{\flagverse{\textcolor{red}{\textit{#1}}:}}
+\newcommand{\sidestar}[1]{\textcolor{red}{\textit{#1}:}}
+\newcommand{\rednote}[1]{\textcolor{red}{#1}}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+\setlength{\vleftskip}{8pt}
+\setlength{\leftmargini}{4.5em}
+\newlength{\oldindent}
+
+
+\newcommand{\antiphon}[2]{
+	\setlength{\oldindent}{\vindent}
+	\setlength{\vindent}{0em}
+	\begin{verse}
+	\side{#1} \textbf{#2}
+	\end{verse}
+	\setlength{\vindent}{\oldindent}
+}
+\newcommand{\intercession}[2]{
+	\begin{tabular}[h]{r p{4.25in}}
+		\sidestar{Leader} & #1 \\
+		\sidestar{All} & #2
+	\end{tabular}}
+
+
+
+\newcommand{\psalm}[4][1]{%
+\setcounter{side}{#1}
+\psalmheading{#2}
+\antiphon{Leader #1}{#3}
+\begin{verse}
+#4
+\end{verse}
+\antiphon{All}{#3}
+}
+
+\setpdftargetpages
+
+\begin{document}
+\vspace{-4.0\baselineskip}
+\hourheading{August 8 -- Holy Father Dominic}
+%\prayerheading{INTRODUCTION}
+\hspace{\leftmargini}\rednote{(Make sign of cross)}\\
+\intercession{God, \rednote{+} come to my assistance}
+{Lord, make haste to help me.}\\
+\intercession{Glory to the Father, and to the Son and to the Holy Spirit:}
+{as it was in the beginning, is now, and will be for ever. Amen, Alleluia.}
+
+\prayerheading{Examination of Conscience}
+\begin{verse}
+	\side{All} I confess to almighty God, \\*
+	to blessed Mary ever virgin, \\*
+	to blessed Dominic our father, \\*
+	to all the saints, and to you, bretheren, \\*
+	that I have sinned exceedingly \\*
+	by thought, word, deed, and omission, through my fault: \\*
+	I beseech you to pray for me.
+
+	\side{Leader} May almighty God have mercy on us \\*
+	and forgive us all our sins, \\*
+	may he free us from all evil, \\*
+	keep us safe and strengthen us in every good work, \\*
+	and bring us to eternal life.
+
+	\side{All} Amen.
+\end{verse}
+
+\prayerheading{HYMN}
+\begin{verse}
+	1. Dominic, our Lady's champion, \\*
+Charged to publish wide her fame, \\*
+Sent to men to sound her Ave \\*
+And to speak her glorious name; \\*
+With the grace of God within you, \\*
+Like a hero lord you came.
+
+2. Stainless as a burnished chalice, \\*
+Shining as a fiery brand, \\*
+Dominic, you came to help us, \\*
+Came to do your Lord's command, \\*
+With the grace of God within you \\*
+And the rosary in your hand.
+
+3. Now again we need your goodness: \\*
+Be our patron and our guide. \\*
+Save us from all sin and error, \\*
+From our blindness and our pride; \\*
+With the grace of God within us, \\*
+May we stand close by your side.
+
+\end{verse}
+%\prayerheading{PSALMODY}
+%\newpage
+\psalmheading{Psalm 91}
+\vspace{-1.5\baselineskip}
+\antiphon{Leader 1}{Night holds no terrors for me sleeping under God's wings.}
+\vspace{-1.0\baselineskip}
+\begin{verse} \setlength{\stanzaskip}{0.25\baselineskip}
+\side{Leader 1} He who dwells in the shelter of the Most High \\*
+\side{Side 1} and abides in the shade of the Almighty \\*
+says to the Lord: “My refuge,  \\*
+my stronghold, my God in whom I trust!”
+
+\side{Side 2} It is he who will free you from the snare  \\*
+of the fowler who seeks to destroy you; \\*
+he will conceal you with his pinions  \\*
+and under his wings you will find refuge.
+
+\side{Side 1} You will not fear the terror of the night  \\*
+nor the arrow that flies by day, \\*
+nor the plague that prowls in the darkness  \\*
+nor the scourge that lays waste at noon.
+
+\side{Side 2} A thousand may fall at your side,  \\*
+ten thousand fall at your right, \\*
+you, it will never approach;  \\*
+his faithfulness is buckler and shield.
+
+\side{Side 1} Your eyes have only to look  \\*
+to see how the wicked are repaid, \\*
+you who have said: “Lord, my refuge!”  \\*
+and have made the Most High your dwelling.
+
+\side{Side 2} Upon you no evil shall fall,  \\*
+no plague approach where you dwell. \\*
+For you has he commanded his angels,  \\*
+to keep you in all your ways.
+
+\side{Side 1} They shall bear you upon their hands  \\*
+lest you strike your foot against a stone. \\*
+On the lion and the viper you will tread  \\*
+and trample the young lion and the dragon.
+
+\side{Side 2} Since he clings to me in love, I will free him;  \\*
+protect him for he knows my name. \\*
+When he calls I shall answer: “I am with you,”  \\*
+I will save him in distress and give him glory.
+
+\side{Side 1} With length of life I will content him;  \\*
+I shall let him see my saving power. \\*
+
+\side{Side 2} Glory to the Father, and to the Son,  \\*
+and to the Holy Spirit: \\*
+\side{Side 1} as it was in the beginning, is now,  \\*
+and will be for ever. Amen.
+
+\end{verse}
+\antiphon{All}{Night holds no terrors for me sleeping under God's wings.}
+%\newpage
+
+\psalmheading{\textbf{READING}\\Revelation 22:4-5}
+%\begin{quote}
+\sidestar{Reader}\\*
+They shall see the Lord face to face and bear his name on their foreheads. The
+night shall be no more. They will need no light from lamps or the sun, for the
+Lord God shall give them light, and they shall reign forever.
+%\end{quote}
+%\newpage
+\prayerheading{RESPONSORY}
+\sidestar{Reader} Into your hands, Lord, I commend my spirit. \\
+%\rednote{---} 
+\sidestar{All} Into your hands, Lord, I commend my spirit.
+
+\sidestar{Reader} You have redeemed us, Lord God of truth. \\
+%\rednote{---}
+\sidestar{All} I commend my spirit.
+
+\sidestar{Reader} Glory to the Father, and to the Son, and to the Holy Spirit. \\
+%\rednote{---} 
+\sidestar{All} Into your hands, Lord, I commend my spirit.
+
+\psalmheading{\textbf{CANTICLE OF SIMEON}\\ Luke 2:29-32}
+%\rednote{All stand}
+\vspace{-1.5\baselineskip}
+\antiphon{Leader}{Protect us, Lord, as we stay awake; watch over us as we sleep,
+that awake, we may keep watch with christ, and asleep, rest in his peace.}
+\setlength{\stanzaskip}{0.25\baselineskip}
+\begin{verse}
+\rednote{(Make sign of cross)}\\
+	\side{All} Lord, \rednote{+} now you let your servant go in peace; \\*
+your word has been fulfilled:
+
+my own eyes have seen the salvation \\*
+which you have prepared in the sight of every people:
+
+a light to reveal you to the nations \\*
+and the glory of your people Israel.
+
+Glory to the Father, and to the Son, \\*
+and to the Holy Spirit: \\*
+as it was in the beginning, is now, \\*
+and will be for ever. Amen.
+\end{verse}
+\setlength{\stanzaskip}{0.75\baselineskip}
+\antiphon{All}{Protect us, Lord, as we stay awake; watch over us as we sleep,
+that awake, we may keep watch with christ, and asleep, rest in his peace.}
+
+\prayerheading{PRAYER}
+\vspace{-1.5\baselineskip}
+\sidestar{Leader}\\*
+Lord, we beg you to visit this house \\*
+and banish from it all the deadly power of the enemy. \\*
+May your holy angels dwell here to keep us in peace; \\*
+and may your blessing be upon us always. \\*
+We ask this through Christ our Lord. \\*
+\sidestar{All} Amen.
+
+%\prayerheading{Antiphon to the Blessed Virgin}
+%Salve Regina
+%
+%\prayerheading{Antiphon to Holy Father Dominic}
+%O Lumen
+
+\end{document}
