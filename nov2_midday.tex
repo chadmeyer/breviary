@@ -1,0 +1,227 @@
+\documentclass[letterpaper,13pt]{extarticle}
+\usepackage[fontsize=15pt]{scrextend}
+\usepackage[left=1.3in,right=0.9in,top=0.1in,bottom=0.5in]{geometry}
+%\usepackage[print]{booklet}
+\usepackage{xcolor}
+\usepackage{liturg}
+\usepackage{alltt}
+\usepackage{verse}
+%%% pdfbook --trim '0.2in 0.0in 0.20in 0.0in' nov2_midday.pdf 
+ 
+
+%\usepackage{calc}
+%\usepackage{scrextend}
+
+\newcommand{\side}[1]{\flagverse{\textcolor{red}{\textit{#1}}:}}
+\newcommand{\sidestar}[1]{\textcolor{red}{\textit{#1}:}}
+\newcommand{\rednote}[1]{\textcolor{red}{#1}}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+\setlength{\vleftskip}{8pt}
+\setlength{\leftmargini}{4.5em}
+\newlength{\oldindent}
+
+
+\newcommand{\antiphon}[2]{
+	\setlength{\oldindent}{\vindent}
+	\setlength{\vindent}{0em}
+	\begin{verse}
+	\side{#1} \textbf{#2}
+	\end{verse}
+	\setlength{\vindent}{\oldindent}
+}
+\newcommand{\intercession}[2]{
+	\begin{tabular}[h]{r p{4.25in}}
+		\sidestar{Leader} & #1 \\
+		\sidestar{All} & #2
+	\end{tabular}}
+
+
+
+\newcommand{\psalm}[4][1]{%
+\setcounter{side}{#1}
+\psalmheading{#2}
+\antiphon{Leader #1}{#3}
+\begin{verse}
+#4
+\end{verse}
+\antiphon{All}{#3}
+}
+
+%\setpdftargetpages
+
+\begin{document}
+\hourheading{The Commemoration of All the Faithful Departed}
+\prayerheading{INTRODUCTION}
+\hspace{\leftmargini}\rednote{(Make sign of cross)}\\
+\intercession{God, \rednote{+} come to my assistance}
+{Lord, make haste to help me.}\\
+\intercession{Glory to the Father, and to the Son and to the Holy Spirit:}
+{as it was in the beginning, is now, and will be for ever. Amen, Alleluia.}
+
+\prayerheading{HYMN}
+\begin{verse}
+Amazing Grace, How sweet the sound \\*
+That saved a wretch like me \\*
+I once was lost, but now am found \\*
+T'was blind but now I see
+
+
+T'was Grace that taught my heart to fear \\*
+And Grace, my fears relieved \\*
+How precious did that grace appear \\*
+The hour I first believed
+\end{verse}
+%\prayerheading{PSALMODY}
+%\newpage
+\psalmheading{Psalm 70}
+\antiphon{Leader 1}{Lord, lay your healing hands on the wounds of my sins.}
+\begin{verse}
+
+	\side{Leader 1}O God, make haste to my rescue, \\*
+	\side{Side 1} Lord, come to my aid! \\*
+Let there be shame and confusion \\*
+on those who seek my life.
+
+	\side{Side 2} O let them turn back in confusion, \\*
+who delight in my harm, \\*
+let them retreat, covered with shame, \\*
+who jeer at my lot.
+
+	\side{Side 1} Let there be rejoicing and gladness \\*
+for all who seek you. \\*
+Let them say for ever: “God is great,” \\*
+who love your saving help.
+
+	\side{Side 2} As for me, wretched and poor, \\*
+come to me, O God. \\*
+You are my rescuer, my help, \\*
+O Lord, do not delay.
+
+	\side{Side 1} Glory to the Father, and to the Son, \\*
+and to the Holy Spirit: \\*
+	\side{Side 2} as it was in the beginning, is now, \\*
+and will be for ever. Amen.
+
+\end{verse}
+\rednote{(Note; today there is only one antiphon for the entire Midday office and it is only repeated after the complete Psalmody.)}\\
+%\newpage
+\psalmheading{Psalm 85}
+\begin{verse}
+
+	\side{Leader 2} O Lord, you once favored your land \\*
+	\side{Side 2}and revived the fortunes of Jacob,\\*
+you forgave the guilt of your people \\*
+and covered all their sins.\\*
+You averted all your rage, \\*
+you calmed the heat of your anger.
+
+	\side{Side 1}Revive us now, God, our helper! \\*
+Put an end to your grievance against us.\\*
+Will you be angry with us for ever, \\*
+will your anger never cease?
+
+	\side{Side 2} Will you not restore again our life \\*
+that your people may rejoice in you?\\*
+Let us see, O Lord, your mercy \\*
+and give us your saving help.
+
+	\side{Side 1} I will hear what the Lord God has to say, \\*
+a voice that speaks of peace, \\*
+peace for his people and his friends \\*
+and those who turn to him in their hearts.\\*
+His help is near for those who fear him \\*
+and his glory will dwell in our land.
+
+	\side{Side 2} Mercy and faithfulness have met; \\*
+justice and peace have embraced.\\*
+Faithfulness shall spring from the earth \\*
+and justice look down from heaven.
+
+	\side{Side 1} The Lord will make us prosper \\*
+and our earth shall yield its fruit.\\*
+Justice shall march before him \\*
+and peace shall follow his steps.
+
+
+\side{Side 2} Glory to the Father, and to the Son, \\*
+and to the Holy Spirit: \\*
+\side{Side 1}as it was in the beginning, is now, \\*
+and will be for ever. Amen.
+\end{verse}
+
+\psalmheading{Psalm 86}
+\begin{verse}
+
+	\side{Leader 1} O Lord, you once favored your land \\*
+	\side{Side 1} and revived the fortunes of Jacob, \\*
+you forgave the guilt of your people \\*
+and covered all their sins.\\*
+You averted all your rage, \\*
+you calmed the heat of your anger.
+
+	\side{Side 2} Revive us now, God, our helper! \\*
+Put an end to your grievance against us.\\*
+Will you be angry with us for ever, \\*
+will your anger never cease?
+
+	\side{Side 1} Will you not restore again our life \\*
+that your people may rejoice in you?\\*
+Let us see, O Lord, your mercy \\*
+and give us your saving help.
+
+	\side{Side 2} I will hear what the Lord God has to say, \\*
+a voice that speaks of peace,\\*
+peace for his people and his friends \\*
+and those who turn to him in their hearts.\\*
+His help is near for those who fear him \\*
+and his glory will dwell in our land.
+
+	\side{Side 1} Mercy and faithfulness have met; \\*
+justice and peace have embraced.\\*
+Faithfulness shall spring from the earth \\*
+and justice look down from heaven.
+
+	\side{Side 2} The Lord will make us prosper \\*
+and our earth shall yield its fruit.\\*
+Justice shall march before him \\*
+and peace shall follow his steps.
+
+	\side{Side 1} Glory to the Father, and to the Son, \\*
+and to the Holy Spirit: \\*
+	\side{Side 2} as it was in the beginning, is now, \\*
+and will be for ever. Amen.
+
+\end{verse}
+\antiphon{All}{Lord, lay your healing hands on the wounds of my sins.}
+
+\psalmheading{\textbf{READING}\\Wisdom 1:13-14a, 15}
+%\begin{quote}
+\sidestar{Reader}\\*
+God did not make death,\\
+   nor does he rejoice in the destruction of the living.\\*
+For he fashioned all things that they might have being;\\
+   For justice is undying.
+
+%\end{quote}
+%\newpage
+\prayerheading{RESPONSORY}
+\sidestar{Reader} Though I walk in the valley of darkness, I fear no evil.\\
+\sidestar{All} For you with me, Lord.
+
+\prayerheading{CONCLUDING PRAYER}
+\sidestar{Leader}\\*
+Merciful Father, \\*
+hear our prayers and console us.\\*
+As we renew our faith in your Son,\\*
+whom you raised from the dead,\\*
+strengthen our hope that all our departed brothers and sisters\\*
+will share in his resurrection,\\*
+who lives and reigns with you for ever and ever.\\*
+\sidestar{All} Amen.
+
+\prayerheading{ACCLAMATION}
+
+\sidestar{Leader} Let us praise the lord \\*
+\sidestar{All} And give him thanks.
+\end{document}
