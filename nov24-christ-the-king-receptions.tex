@@ -1,0 +1,334 @@
+\documentclass[letterpaper,14pt]{extarticle}
+\usepackage[fontsize=18pt]{scrextend}
+\usepackage[left=1.0in,right=0.3in,top=0.1in,bottom=0.5in]{geometry}
+%\usepackage[print]{booklet}
+\usepackage{xcolor}
+\usepackage{liturg}
+\usepackage{alltt}
+\usepackage{verse}
+%\usepackage{calc}
+%\usepackage{scrextend}
+
+\newcommand{\side}[1]{\flagverse{\textcolor{red}{\textit{#1}}:}}
+\newcommand{\sidestar}[1]{\textcolor{red}{\textit{#1}:}}
+\newcommand{\rednote}[1]{\textcolor{red}{#1}}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+\setlength{\vleftskip}{8pt}
+\setlength{\leftmargini}{4.5em}
+\newlength{\oldindent}
+
+
+\newcommand{\antiphon}[2]{
+	\setlength{\oldindent}{\vindent}
+	\setlength{\vindent}{0em}
+	\begin{verse}
+	\side{#1} \textbf{#2}
+	\end{verse}
+	\setlength{\vindent}{\oldindent}
+}
+\newcommand{\intercession}[2]{
+	\begin{tabular}[h]{r p{4.25in}}
+		\sidestar{Leader} & #1 \\
+		\sidestar{All} & #2
+	\end{tabular}}
+
+
+
+\newcommand{\psalm}[4][1]{%
+\setcounter{side}{#1}
+\psalmheading{#2}
+\antiphon{Leader #1}{#3}
+\begin{verse}
+#4
+\end{verse}
+\antiphon{All}{#3}
+}
+
+%\setpdftargetpages
+
+\begin{document}
+\hourheading{Christ the King}
+\prayerheading{INTRODUCTION}
+\hspace{\leftmargini}\rednote{(Make sign of cross)}\\
+\intercession{God, \rednote{+} come to my assistance}
+{Lord, make haste to help me.}\\
+\intercession{Glory to the Father, and to the Son and to the Holy Spirit:}
+{as it was in the beginning, is now, and will be for ever. Amen, Alleluia.}
+
+\prayerheading{HYMN}
+\begin{verse}
+
+Crown Him with many crowns, \\*
+The Lamb upon His throne; \\*
+Hark! how the heav'nly anthem drowns \\*
+All music but its own!\\*
+Awake, my soul, and sing\\*
+Of Him who died for thee,\\*
+And hail Him as thy matchless King\\*
+Through all eternity.
+
+Crown Him the Lord of love! \\*
+Behold His hands and side, \\*
+Rich wounds, yet visible above, \\*
+In beauty glorified: \\*
+No angel in the sky\\*
+Can fully bear that sight,\\*
+But downward bends his burning eye \\*
+At mysteries so bright.
+
+Crown Him the Lord of life! \\*
+That triumphed o'er the grave; \\*
+And rose victorious in the strife\\*
+For those He came to save:\\*
+His glories now we sing,\\*
+Who died and rose on high;\\*
+Who died eternal life to bring,\\*
+And lives that death may die.
+
+\end{verse}
+%\prayerheading{PSALMODY}
+%\newpage
+\psalmheading{Psalm 110:1-5,7}
+\antiphon{Leader 1}{He shall sit upon the throne of David and rule over his kingdom for ever, alleluia.}
+\begin{verse}
+\side{Leader 1} The Lord’s revelation to my Master: \\*
+\side{Side 1} ``Sit on my right: \\*
+your foes I will put beneath your feet.''
+
+\side{Side 2} The Lord will wield from Zion \\*
+your scepter of power: \\*
+rule in the midst of all your foes.
+
+\side{Side 1} A prince from the day of your birth \\*
+on the holy mountains; \\*
+from the womb before the dawn I begot you.
+
+\side{Side 2} The Lord has sworn an oath he will not change. \\*
+“You are a priest for ever, \\*
+a priest like Melchizedek of old.”
+
+\side{Side 1} The Master standing at your right hand \\*
+will shatter kings in the day of his great wrath.
+
+\side{Side 2} He shall drink from the stream by the wayside \\*
+and therefore he shall lift up his head. 
+
+\side{Side 1} Glory to the Father, and to the Son, \\*
+and to the Holy Spirit: \\*
+\side{Side 2} as it was in the beginning, is now, \\*
+and will be for ever. Amen.
+\end{verse}
+\antiphon{All}{He shall sit upon the throne of David and rule over his kingdom for ever, alleluia.}
+%\newpage
+\psalmheading{Psalm 145:1-13}
+\antiphon{Leader 2}{Your kingdom shall be an everlasting kingdom, and you shall rule from generation to generation.}
+\begin{verse}
+\side{Leader 2} I will give you glory, O God my King, \\*
+\side{Side 2} I will bless your name forever.
+
+\side{Side 1} I will bless you day after day \\*
+and praise your name for ever.\\*
+The Lord is great, highly to be praised, \\*
+his greatness cannot be measured.
+
+\side{Side 2} Age to age shall proclaim your works, \\*
+shall declare your mighty deeds, \\*
+shall speak of your splendor and glory, \\*
+tell the tale of your wonderful works.
+
+\side{Side 1} They will speak of your terrible deeds, \\*
+recount your greatness and might.\\*
+They will recall your abundant goodness; \\*
+age to age shall ring out your justice.
+
+\side{Side 2} The Lord is kind and full of compassion, \\*
+slow to anger, abounding in love.\\*
+How good is the Lord to all, \\*
+compassionate to all his creatures.
+
+\side{Side 1} All your creatures shall thank you, O Lord, \\*
+and your friends shall repeat their blessing.\\*
+They shall speak of the glory of your reign \\*
+and declare your might, O God,
+
+\side{Side 2} to make known to men your mighty deeds \\*
+and the glorious splendor of your reign.\\*
+Yours is an everlasting kingdom; \\*
+your rule lasts from age to age.
+
+\side{Side 1} Glory to the Father, and to the Son, \\*
+and to the Holy Spirit: \\*
+\side{Side 2}as it was in the beginning, is now, \\*
+and will be for ever. Amen.
+\end{verse}
+\antiphon{All}{Your kingdom shall be an everlasting kingdom, and you shall rule from generation to generation.}
+
+\psalmheading{Revelation 19:1-7}
+\antiphon{Leader 1}{On his cloak and on his thigh a name was written: King of kings, and Lord of lords. To him be glory and power for ever.}
+%\setlength{\stanzaskip}{0.25\baselineskip}
+\vspace{-1.5\baselineskip}
+\begin{verse}
+\side{Leader 1} Alleluia. \\*
+\side{Side 1} Salvation, glory, and power to our God: \\*
+his judgments are honest and true. \\*
+Alleluia.
+
+\side{Side 2} Alleluia. \\*
+Sing praise to our God, all you his servants, \\*
+all who worship him reverently, great and small. \\*
+Alleluia.
+
+\side{Side 1} Alleluia. \\ *
+The Lord our all-powerful God is King; \\*
+Let us rejoice, sing praise, and give him glory. \\*
+Alleluia.
+
+\side{Side 2} Alleluia. \\*
+The wedding feast of the Lamb has begun, \\*
+and his bride is prepared to welcome him. \\*
+Alleluia.
+
+\side{Side 1} Alleluia. \\*
+Glory to the Father, and to the Son, \\*
+and to the Holy Spirit: \\*
+Alleluia.
+
+\side{Side 2} Alleluia. \\*
+as it was in the beginning, is now, \\*
+and will be for ever. Amen. \\*
+Alleluia 
+\end{verse}
+%\setlength{\stanzaskip}{0.75\baselineskip}
+\antiphon{All}{On his cloak and on his thigh a name was written: King of kings, and Lord of lords. To him be glory and power for ever.}
+
+
+\psalmheading{\textbf{READING}\\1 Corinthians 15:25-28}
+%\begin{quote}
+\sidestar{Reader}\\*
+Christ must reign until God has put all enemies under his feet, and the last enemy to be destroyed is death. Scripture reads that God “has placed all things under his feet.” But when it says that everything has been made subject, it is clear that he who has made everything subject to Christ is excluded. When, finally, all has been subjected to the Son, he will then subject himself to the One who made all things subject to him, so that God may be all in all.
+
+%\end{quote}
+%\newpage
+\prayerheading{RESPONSORY}
+\begin{verse}
+\side{Reader} Your throne, O God, shall stand for ever.\\
+\side{All} Your throne, O God, shall stand for ever.
+
+\side{Reader} The scepter of your kingdom is a scepter of justice.\\
+\side{All} It shall stand for ever.
+
+\side{Reader} Glory to the Father, and to the Son, and to the Holy Spirit. \\
+\side{All} Your throne, O God, shall stand for ever.
+\end{verse}
+
+\psalmheading{\textbf{Receptions take place at this point according to the rite.}}
+
+\psalmheading{\textbf{CANTICLE OF MARY}\\ Luke 1:49-55}
+\rednote{All stand}
+\antiphon{Leader}{All authority in heaven and on earth has been given to me, says the Lord.}
+%\setlength{\stanzaskip}{0.25\baselineskip}
+\begin{verse}
+\rednote{(Make sign of cross)}\\
+\side{All} My \rednote{+} soul proclaims the greatness of the Lord, \\*
+my spirit rejoices in God my Savior \\*
+for he has looked with favor on his lowly servant.
+
+From this day all generations will call me blessed: \\*
+the Almighty has done great things for me, \\*
+and holy is his Name.
+
+He has mercy on those who fear him \\*
+in every generation.
+
+He has shown the strength of his arm, \\*
+he has scattered the proud in their conceit.
+
+He has cast down the mighty from their thrones, \\*
+and has lifted up the lowly.
+
+He has filled the hungry with good things, \\*
+and the rich he has sent away empty.
+
+He has come to the help of his servant Israel \\*
+for he has remembered his promise of mercy, \\*
+the promise he made to our fathers, \\*
+to Abraham and his children for ever.
+
+Glory to the Father, and to the Son, \\*
+and to the Holy Spirit: \\*
+as it was in the beginning, is now, \\*
+and will be for ever. Amen.
+\end{verse}
+%\setlength{\stanzaskip}{0.75\baselineskip}
+\antiphon{All}{All authority in heaven and on earth has been given to me, says the Lord.}
+
+\prayerheading{INTERCESSIONS}
+\intercession{Let us pray to Christ the King. He is the firstborn of all creation; all things exist in him.}
+{\textit{May your kingdom come, O Lord.}}
+
+\intercession{Christ, our king and shepherd, gather your sheep from every land.}
+{Give them pasture in green and fertile meadows.}
+
+\intercession{Christ, our leader and savior, form all men into your own people, heal the sick, seek out the lost, guard the strong,}
+{call back those who have wandered away, strengthen those who waver, gather all your sheep into one flock.}
+
+\intercession{Judge of all ages, when you hand over your kingdom to the Father, place us at your right hand,}
+{so that we may inherit the kingdom prepared for us from the beginning of the world.}
+
+\intercession{Christ, Light of the world, sanctify those who have been received today into the Order of Preachers,}
+{help them to follow the example of the holy men and women who have gone before them.}
+
+\intercession{Christ, Head of the Church, unite the St. Albert Group as a family in your name,}
+{make our prayer, study and preaching together build up the body of Christ.}
+
+
+
+%\intercession{Prince of peace, break the weapons of war,}
+%{and inspire the nations with your peace.}
+
+%\intercession{Christ, heir of all nations, gather humanity and all the good things of your creation into the kingdom of your Church which your Father bestowed on you,}
+%{so that the whole body of your people, united in the Holy Spirit, may acknowledge you as their head.}
+
+\intercession{Christ, firstborn of the dead and firstfruits of those who have fallen asleep in death,}
+{bring all who have died to the glory of the resurrection, especially our brothers and sisters in the family of Dominic.}
+
+\prayerheading{THE LORD'S PRAYER}
+\antiphon{Leader}{Gathering our prayer and praises into one, let us offer the
+prayer Christ himself taught us:}
+\begin{verse}
+	\side{All} Our Father, who art in heaven,[$\cdots$] \\
+%hallowed be thy name; \\
+%thy kingdom come; \\
+%thy will be done on earth \\
+%as it is in heaven. \\
+%Give us this day our daily bread; \\
+%and forgive us our trespasses \\
+%as we forgive those who trespass against us; \\
+%and lead us not into temptation, \\
+%but deliver us from evil.
+\end{verse}
+
+\psalmheading{CONCLUSION FROM THE RITE OF RECEPTION}
+
+%\sidestar{Leader}\\*
+%Almighty ever-living God, \\*
+%whose will is to restore all things \\*
+%in your beloved Son, the King of the universe,\\*
+%grant, we pray,\\*
+%that the whole creation, set free from slavery,\\*
+%may render your majesty service\\*
+%and ceaselessly proclaim your praise.\\*
+%Through our Lord Jesus Christ, your Son, \\*
+%who lives and reigns with you in the unity of the Holy Spirit, \\*
+%one God, for ever and ever. \\*
+%\sidestar{All} Amen.
+%
+%\prayerheading{DISMISSAL}
+%
+%\sidestar{Leader}\\*
+%May the Lord \rednote{+} bless us, \\*
+%protect us from all evil \\*
+%and bring us to everlasting life. \\*
+%\sidestar{All} Amen.
+\end{document}
