@@ -1,0 +1,310 @@
+\documentclass[letterpaper,14pt]{extarticle}
+\usepackage[fontsize=19pt]{scrextend}
+\usepackage[left=0.7in,right=0.3in,top=0.1in,bottom=0.5in]{geometry}
+%\usepackage[print]{booklet}
+\usepackage{xcolor}
+\usepackage{liturg}
+\usepackage{alltt}
+\usepackage{verse}
+%\usepackage{calc}
+%\usepackage{scrextend}
+
+\newcommand{\side}[1]{\flagverse{\textcolor{red}{\textit{#1}}:}}
+\newcommand{\sidestar}[1]{\textcolor{red}{\textit{#1}:}}
+\newcommand{\rednote}[1]{\textcolor{red}{#1}}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+\setlength{\vleftskip}{8pt}
+\setlength{\leftmargini}{4.5em}
+\newlength{\oldindent}
+
+
+\newcommand{\antiphon}[2]{
+	\setlength{\oldindent}{\vindent}
+	\setlength{\vindent}{0em}
+	\begin{verse}
+	\side{#1} \textbf{#2}
+	\end{verse}
+	\setlength{\vindent}{\oldindent}
+}
+\newcommand{\intercession}[2]{
+	\begin{tabular}[h]{r p{4.25in}}
+		\sidestar{Leader} & #1 \\
+		\sidestar{All} & #2
+	\end{tabular}}
+
+
+
+\newcommand{\psalm}[4][1]{%
+\setcounter{side}{#1}
+\psalmheading{#2}
+\antiphon{Leader #1}{#3}
+\begin{verse}
+#4
+\end{verse}
+\antiphon{All}{#3}
+}
+
+%\setpdftargetpages
+
+\begin{document}
+\hourheading{Third Sunday of Advent}
+\prayerheading{INTRODUCTION}
+\hspace{\leftmargini}\rednote{(Make sign of cross)}\\
+\intercession{God, \rednote{+} come to my assistance}
+{Lord, make haste to help me.}\\
+\intercession{Glory to the Father, and to the Son and to the Holy Spirit:}
+{as it was in the beginning, is now, and will be for ever. Amen, Alleluia.}
+
+\prayerheading{HYMN}
+\begin{verse}
+
+	Creator of the stars of night, \\*
+	Your people’s everlasting light, \\*
+	O Christ, Redeemer, save us all, \\*
+	And hear your servants when they call.
+	
+	Now, grieving that the ancient curse \\*
+	Should doom to death a universe, \\*
+	You came O Savior to set free, \\*
+	Your own in glorious liberty.
+	
+	At whose great name, Lord Jesus now, \\*
+	All knees must bend, all hearts must bow; \\*
+	All things in heaven and earth adore, \\*
+	And own thee King for evermore,
+	
+	To God the Father, God the Son, \\*
+	And God the Spirit, Three in One, \\*
+	Praise, honor, might, and glory be \\*
+	From age to age eternally. Amen.
+	
+\end{verse}
+%\prayerheading{PSALMODY}
+\newpage
+\psalmheading{Psalm 110:1--5,7}
+\antiphon{Leader 1}{Our Lord will come to claim his glorious throne in the assembly of the princes.}
+\begin{verse}
+\side{Leader 1} The Lord’s revelation to my Master: \\*
+\side{Side 1} ``Sit on my right: \\*
+your foes I will put beneath your feet.''
+
+\side{Side 2} The Lord will wield from Zion \\*
+your scepter of power: \\*
+rule in the midst of all your foes.
+
+\side{Side 1} A prince from the day of your birth \\*
+on the holy mountains; \\*
+from the womb before the dawn I begot you.
+
+\side{Side 2} The Lord has sworn an oath he will not change. \\*
+“You are a priest for ever, \\*
+a priest like Melchizedek of old.”
+
+\side{Side 1} The Master standing at your right hand \\*
+will shatter kings in the day of his great wrath.
+
+\side{Side 2} He shall drink from the stream by the wayside \\*
+and therefore he shall lift up his head. 
+
+\side{Side 1} Glory to the Father, and to the Son, \\*
+and to the Holy Spirit: \\*
+\side{Side 2} as it was in the beginning, is now, \\*
+and will be for ever. Amen.
+\end{verse}
+\antiphon{All}{Our Lord will come to claim his glorious 
+throne in the assembly of the princes.}
+\newpage
+\psalmheading{Psalm 111}
+\antiphon{Leader 2}{Let the mountains break out with joy and the hills with answering gladness, for the world’s true light, the Lord, comes with power and might.}
+\begin{verse}
+\side{Leader 2} I will thank the Lord with all my heart \\*
+\side{Side 2} in the meeting of the just and their assembly. \\*
+Great are the works of the Lord, \\*
+to be pondered by all who love them.
+
+\side{Side 1} Majestic and glorious his work, \\*
+his justice stands firm for ever. \\*
+He makes us remember his wonders. \\*
+The Lord is compassion and love.
+
+\side{Side 2} He gives food to those who fear him; \\*
+keeps his covenant ever in mind. \\*
+He has shown his might to his people \\*
+by giving them the lands of the nations.
+
+\side{Side 1} His works are justice and truth, \\*
+his precepts are all of them sure, \\*
+standing firm for ever and ever; \\*
+they are made in uprightness and truth.
+
+\side{Side 2} He has sent deliverance to his people \\*
+and established his covenant for ever. \\*
+Holy his name, to be feared.
+
+\side{Side 1} To fear the Lord is the first stage of wisdom; \\*
+all who do so prove themselves wise. \\*
+His praise shall last for ever!
+
+\side{Side 2} Glory to the Father, and to the Son, \\*
+and to the Holy Spirit: \\*
+\side{Side 1 }as it was in the beginning, is now, \\*
+and will be for ever. Amen.
+\end{verse}
+\antiphon{All}{Let the mountains break out with joy and the hills with answering gladness, 
+for the world’s true light, the Lord, comes with power and might.}
+
+\psalmheading{Revelation 19:1-7}
+\antiphon{Leader 1}{Let us live in holiness and love as we patiently await our blessed hope, the coming of our Savior.}
+%\setlength{\stanzaskip}{0.25\baselineskip}
+\vspace{-1.5\baselineskip}
+\begin{verse}
+\side{Leader 1} Alleluia. \\*
+\side{Side 1} Salvation, glory, and power to our God: \\*
+his judgments are honest and true. \\*
+Alleluia.
+
+\side{Side 2} Alleluia. \\*
+Sing praise to our God, all you his servants, \\*
+all who worship him reverently, great and small. \\*
+Alleluia.
+
+\side{Side 1} Alleluia. \\ *
+The Lord our all-powerful God is King; \\*
+Let us rejoice, sing praise, and give him glory. \\*
+Alleluia.
+
+\side{Side 2} Alleluia. \\*
+The wedding feast of the Lamb has begun, \\*
+and his bride is prepared to welcome him. \\*
+Alleluia.
+
+\side{Side 1} Alleluia. \\*
+Glory to the Father, and to the Son, \\*
+and to the Holy Spirit: \\*
+Alleluia.
+
+\side{Side 2} Alleluia. \\*
+as it was in the beginning, is now, \\*
+and will be for ever. Amen. \\*
+Alleluia 
+\end{verse}
+%\setlength{\stanzaskip}{0.75\baselineskip}
+\antiphon{All}{Let us live in holiness and love as we patiently await our blessed hope, the coming of our Savior.}
+
+
+\psalmheading{\textbf{READING}\\Philippians 4:4-5}
+\begin{verse}
+\side{Reader}Rejoice in the Lord always! I say it again. Rejoice! \\*
+Everyone should see how unselfish you are. The Lord is near.
+
+\end{verse}
+%\newpage
+\prayerheading{RESPONSORY}
+\begin{verse}
+\side{Reader} Lord, show us your mercy and love. \\
+\side{All} Lord, show us your mercy and love.
+
+\side{Reader} And grant us your salvation, \\
+\side{All} your mercy and love.
+
+\side{Reader} Glory to the Father, and to the Son, and to the Holy Spirit. \\
+\side{All} Lord, show us your mercy and love.
+\end{verse}
+
+\psalmheading{\textbf{CANTICLE OF MARY}\\ Luke 1:49-55}
+\rednote{All stand}
+\antiphon{Leader}{Are you the One whose coming was foretold, or should we look for another? Tell John what you see: the blind have their sight restored, the dead are raised to life, the poor have the good news preached to them, alleluia.}
+%\setlength{\stanzaskip}{0.25\baselineskip}
+\begin{verse}
+\rednote{(Make sign of cross)}\\
+\side{All} My \rednote{+} soul proclaims the greatness of the Lord, \\*
+my spirit rejoices in God my Savior \\*
+for he has looked with favor on his lowly servant.
+
+From this day all generations will call me blessed: \\*
+the Almighty has done great things for me, \\*
+and holy is his Name.
+
+He has mercy on those who fear him \\*
+in every generation.
+
+He has shown the strength of his arm, \\*
+he has scattered the proud in their conceit.
+
+He has cast down the mighty from their thrones, \\*
+and has lifted up the lowly.
+
+He has filled the hungry with good things, \\*
+and the rich he has sent away empty.
+
+He has come to the help of his servant Israel \\*
+for he has remembered his promise of mercy, \\*
+the promise he made to our fathers, \\*
+to Abraham and his children for ever.
+
+Glory to the Father, and to the Son, \\*
+and to the Holy Spirit: \\*
+as it was in the beginning, is now, \\*
+and will be for ever. Amen.
+\end{verse}
+%\setlength{\stanzaskip}{0.75\baselineskip}
+\antiphon{All}{Are you the One whose coming was foretold, or should we look for another? Tell John what you see: the blind have their sight restored, the dead are raised to life, the poor have the good news preached to them, alleluia.}
+
+\prayerheading{INTERCESSIONS}
+\intercession{To Jesus Christ, our Redeemer, the way, the truth, and the life, let us make our humble prayer:}
+{\textit{Come and stay with us, Lord.}}
+
+\intercession{Son of the Most High, your coming was announced to the Virgin Mary by Gabriel,}
+{come and rule over your people for ever.}
+
+\intercession{Holy One of God, in your presence John the Baptist leapt in Elizabeth’s womb,}
+{bring the joy of salvation to all the earth.}
+
+\intercession{Jesus the Savior, the angel revealed your name to Joseph the just man,}
+{come and save your people from their sins.}
+
+\intercession{Light of the world, for whom Simeon and all the just waited,}
+{come and comfort us.}
+
+\intercession{O Rising Sun that never sets, Zechariah foretold that you would visit us from above,}
+{come and shine on those who dwell in darkness and the shadow of death. }
+
+\prayerheading{THE LORD'S PRAYER}
+\antiphon{Leader}{With longing for the coming of God’s kingdom, let us offer our prayer to the Father:}
+	
+\begin{verse}
+	\side{All} Our Father, who art in heaven,[$\cdots$] \\
+%hallowed be thy name; \\
+%thy kingdom come; \\
+%thy will be done on earth \\
+%as it is in heaven. \\
+%Give us this day our daily bread; \\
+%and forgive us our trespasses \\
+%as we forgive those who trespass against us; \\
+%and lead us not into temptation, \\
+%but deliver us from evil.
+\end{verse}
+
+\psalmheading{CONCLUSION}
+
+\sidestar{Leader}\\*
+O God, who see how your people\\*
+faithfully await the feast of the Lord’s Nativity,\\*
+enable us, we pray,\\*
+to attain the joys of so great a salvation\\*
+and to celebrate them always\\*
+with solemn worship and glad rejoicing.\\*
+Through our Lord Jesus Christ, your Son,\\*
+who lives and reigns with you in the unity of the Holy Spirit,\\*
+one God, for ever and ever.\\*
+\sidestar{All} Amen.
+
+\prayerheading{DISMISSAL}
+
+\sidestar{Leader}\\*
+May the Lord \rednote{+} bless us, \\*
+protect us from all evil \\*
+and bring us to everlasting life. \\*
+\sidestar{All} Amen.
+\end{document}
