@@ -1,0 +1,329 @@
+\documentclass[letterpaper,14pt]{extarticle}
+\usepackage[fontsize=19pt]{scrextend}
+\usepackage[left=0.7in,right=0.3in,top=0.1in,bottom=0.5in]{geometry}
+%\usepackage[print]{booklet}
+\usepackage{xcolor}
+\usepackage{liturg}
+\usepackage{alltt}
+\usepackage{verse}
+%\usepackage{calc}
+%\usepackage{scrextend}
+
+\newcommand{\side}[1]{\flagverse{\textcolor{red}{\textit{#1}}:}}
+\newcommand{\sidestar}[1]{\textcolor{red}{\textit{#1}:}}
+\newcommand{\rednote}[1]{\textcolor{red}{#1}}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+\setlength{\vleftskip}{8pt}
+\setlength{\leftmargini}{4.5em}
+\newlength{\oldindent}
+
+
+\newcommand{\antiphon}[2]{
+	\setlength{\oldindent}{\vindent}
+	\setlength{\vindent}{0em}
+	\begin{verse}
+	\side{#1} \textbf{#2}
+	\end{verse}
+	\setlength{\vindent}{\oldindent}
+}
+\newcommand{\intercession}[2]{
+	\begin{tabular}[h]{r p{4.25in}}
+		\sidestar{Leader} & #1 \\
+		\sidestar{All} & #2
+	\end{tabular}}
+
+
+
+\newcommand{\psalm}[4][1]{%
+\setcounter{side}{#1}
+\psalmheading{#2}
+\antiphon{Leader #1}{#3}
+\begin{verse}
+#4
+\end{verse}
+\antiphon{All}{#3}
+}
+
+%\setpdftargetpages
+
+\begin{document}
+\hourheading{Thursday of the First Week in Lent}
+\prayerheading{INTRODUCTION}
+\hspace{\leftmargini}\rednote{(Make sign of cross)}\\
+\intercession{God, \rednote{+} come to my assistance}
+{Lord, make haste to help me.}\\
+\intercession{Glory to the Father, and to the Son and to the Holy Spirit:}
+{as it was in the beginning, is now, and will be for ever. Amen.}
+
+\prayerheading{HYMN}
+\begin{verse}
+
+	Creator of the stars of night, \\*
+	Your people’s everlasting light, \\*
+	O Christ, Redeemer, save us all, \\*
+	And hear your servants when they call.
+	
+	Now, grieving that the ancient curse \\*
+	Should doom to death a universe, \\*
+	You came O Savior to set free, \\*
+	Your own in glorious liberty.
+	
+	At whose great name, Lord Jesus now, \\*
+	All knees must bend, all hearts must bow; \\*
+	All things in heaven and earth adore, \\*
+	And own thee King for evermore,
+	
+	To God the Father, God the Son, \\*
+	And God the Spirit, Three in One, \\*
+	Praise, honor, might, and glory be \\*
+	From age to age eternally. Amen.
+	
+\end{verse}
+%\prayerheading{PSALMODY}
+\newpage
+\psalmheading{Psalm 30}
+\antiphon{Leader 1}{I cried to you, Lord, and you healed me; I will praise you for ever.}
+\begin{verse}
+\side{Leader 1} I will praise you, Lord, you have rescued me \\*
+\side{Side 1} and have not let my enemies rejoice over me. 
+
+\side{Side 2} O Lord, I cried to you for help \\*
+and you, my God, have healed me. \\*
+O Lord, you have raised my soul from the dead, \\*
+restored me to life from those who sink into the grave.
+
+\side{Side 1} Sing psalms to the Lord, you who love him, \\*
+give thanks to his holy name. \\*
+His anger lasts but a moment; his favor through life. \\*
+At night there are tears, but joy comes with dawn.
+
+\side{Side 2} I said to myself in my good fortune: \\*
+“Nothing will ever disturb me.” \\*
+Your favor had set me on a mountain fastness, \\*
+then you hid your face and I was put to confusion.
+
+\side{Side 1} To you, Lord, I cried, \\*
+to my God I made appeal: \\*
+“What profit would my death be, my going to the grave? \\*
+Can dust give you praise or proclaim your truth?”
+
+\side{Side 2} The Lord listened and had pity. \\*
+The Lord came to my help. \\*
+For me you have changed my mourning into dancing, \\*
+you removed my sackcloth and clothed me with joy. \\*
+So my soul sings psalms to you unceasingly. \\*
+O Lord my God, I will thank you for ever.
+
+\side{Side 1} Glory to the Father, and to the Son, \\*
+and to the Holy Spirit: \\*
+\side{Side 2} as it was in the beginning, is now, \\*
+and will be for ever. Amen.
+\end{verse}
+\antiphon{Leader 1}{I cried to you, Lord, and you healed me; I will praise you for ever.}
+\newpage
+\psalmheading{Psalm 32}
+\antiphon{Leader 2}{The one who is sinless in the eyes of God is blessed indeed.}
+\begin{verse}
+\side{Leader 2} Happy the man whose offense is forgiven, \\*
+\side{Side 2} whose sin is remitted. \\*
+O happy the man to whom the Lord \\*
+imputes no guilt, \\*
+in whose spirit is no guile.
+
+\side{Side 1} I kept it secret and my frame was wasted. \\*
+I groaned all the day long \\*
+for night and day your hand \\*
+was heavy upon me. \\*
+Indeed, my strength was dried up \\*
+as by the summer’s heat.
+
+\side{Side 2} But now I have acknowledged my sins; \\*
+my guilt I did not hide. \\*
+I said: “I will confess \\*
+my offense to the Lord.” \\*
+And you, Lord, have forgiven \\*
+the guilt of my sin.
+
+\side{Side 1} So let every good man pray to you \\*
+in the time of need. \\*
+The floods of water may reach high \\*
+but him they shall not reach. \\*
+You are my hiding place, O Lord; \\*
+you save me from distress. \\*
+You surround me with cries of deliverance.
+
+\side{Side 2} I will instruct you and teach you \\*
+the way you should go; \\*
+I will give you counsel \\*
+with my eye upon you.
+
+\side{Side 1} Be not like horse and mule, unintelligent, \\*
+needing bridle and bit, \\*
+else they will not approach you. \\*
+Many sorrows has the wicked \\*
+but he who trusts in the Lord, \\*
+loving mercy surrounds him.
+
+\side{Side 2} Rejoice, rejoice in the Lord, \\*
+exult, you just! \\*
+O come, ring out your joy, \\*
+all you upright of heart.
+
+\side{Side 1} Glory to the Father, and to the Son, \\*
+and to the Holy Spirit: \\*
+\side{Side 2}as it was in the beginning, is now, \\*
+and will be for ever. Amen.
+\end{verse}
+\antiphon{All}{The one who is sinless in the eyes of God is blessed indeed.}
+
+\psalmheading{Revelation 11:17-18; 12:10b-12a}
+\antiphon{Leader 1}{The Father has given Christ all power, honor and kingship; all people will obey him.}
+%\setlength{\stanzaskip}{0.25\baselineskip}
+\vspace{-1.5\baselineskip}
+\begin{verse}
+\end{verse}
+%\setlength{\stanzaskip}{0.75\baselineskip}
+\side{Leader 1} We praise you, the Lord God Almighty, \\*
+\side{Side 1} who is and who was. \\*
+You have assumed your great power, \\*
+you have begun your reign.
+
+\side{Side 2} The nations have raged in anger, \\*
+but then came your day of wrath \\*
+and the moment to judge the dead: \\*
+the time to reward your servants the prophets \\*
+and the holy ones who revere you, \\*
+the great and the small alike.
+
+\side{Side 1} Now have salvation and power come, \\*
+the reign of our God and the authority \\*
+of his Anointed One. \\*
+For the accuser of our brothers is cast out, \\*
+who night and day accused them before God.
+
+\side{Side 2} They defeated him by the blood of the Lamb \\*
+and by the word of their testimony; \\*
+love for life did not deter them from death. \\*
+So rejoice, you heavens, \\*
+and you that dwell therein!
+
+\side{Side 1} Glory to the Father, and to the Son, \\*
+and to the Holy Spirit: \\*
+\side{Side 2} as it was in the beginning, is now, \\*
+and will be for ever. Amen.
+\antiphon{All}{The Father has given Christ all power, honor and kingship; all people will obey him.}
+
+
+\psalmheading{\textbf{READING}\\James 4:7-8, 10}
+\begin{verse}
+\side{Reader}Submit to God; resist the devil and he will take flight. Draw close to God, and he will draw close to you. Cleanse your hands, you sinners; purify your hearts, you backsliders. Be humbled in the sight of the Lord and he will raise you on high.
+\end{verse}
+%\newpage
+\prayerheading{RESPONSORY}
+\begin{verse}
+\side{Reader} To you, O Lord, I make my prayer for mercy. \\
+\side{All} To you, O Lord, I make my prayer for mercy.
+
+\side{Reader} Heal my soul, for I have sinned against you. \\
+\side{All} I make my prayer for mercy.
+
+\side{Reader} Glory to the Father, and to the Son, and to the Holy Spirit. \\
+\side{All} To you, O Lord, I make my prayer for mercy.
+\end{verse}
+
+\psalmheading{\textbf{CANTICLE OF MARY}\\ Luke 1:49-55}
+\rednote{All stand}
+\antiphon{Leader}{Ask and you shall receive; seek and you shall find; knock and the door will be opened to you.}
+%\setlength{\stanzaskip}{0.25\baselineskip}
+\begin{verse}
+\rednote{(Make sign of cross)}\\
+\side{All} My \rednote{+} soul proclaims the greatness of the Lord, \\*
+my spirit rejoices in God my Savior \\*
+for he has looked with favor on his lowly servant.
+
+From this day all generations will call me blessed: \\*
+the Almighty has done great things for me, \\*
+and holy is his Name.
+
+He has mercy on those who fear him \\*
+in every generation.
+
+He has shown the strength of his arm, \\*
+he has scattered the proud in their conceit.
+
+He has cast down the mighty from their thrones, \\*
+and has lifted up the lowly.
+
+He has filled the hungry with good things, \\*
+and the rich he has sent away empty.
+
+He has come to the help of his servant Israel \\*
+for he has remembered his promise of mercy, \\*
+the promise he made to our fathers, \\*
+to Abraham and his children for ever.
+
+Glory to the Father, and to the Son, \\*
+and to the Holy Spirit: \\*
+as it was in the beginning, is now, \\*
+and will be for ever. Amen.
+\end{verse}
+%\setlength{\stanzaskip}{0.75\baselineskip}
+\antiphon{All}{Ask and you shall receive; seek and you shall find; knock and the door will be opened to you.}
+
+\prayerheading{INTERCESSIONS}
+\intercession{Christ the Lord gave us a new commandment, of love for each other. Let us pray to him:}
+{\textit{Lord, build up your people in love.}}
+
+\intercession{Good Master, teach us to love you in our neighbor,}
+{and in serving them to serve you.}
+
+\intercession{On the cross you asked pardon for your executioners,}
+{give us strength to love our enemies and pray for those who persecute us.}
+
+\intercession{Through the mystery of your body and blood, deepen our love, our perseverance and our trust,}
+{strengthen the weak, console the sorrowful, and give hope to the dying.}
+
+\intercession{Light of the world, you gave light to the man born blind when he had washed in the pool of Siloam,}
+{enlighten catechumens through the water of baptism and the word of life.}
+
+\intercession{Give to the dead the perfect joy of your eternal love,}
+}and number us also among your chosen ones.}
+
+\prayerheading{THE LORD'S PRAYER}
+\antiphon{Leader}{With longing for the coming of God’s kingdom, let us offer our prayer to the Father:}
+	
+\begin{verse}
+	\side{All} Our Father, who art in heaven,\\ %[$\cdots$] \\
+hallowed be thy name; \\
+thy kingdom come; \\
+thy will be done on earth \\
+as it is in heaven. \\
+Give us this day our daily bread; \\
+and forgive us our trespasses \\
+as we forgive those who trespass against us; \\
+and lead us not into temptation, \\
+but deliver us from evil.
+\end{verse}
+
+\psalmheading{CONCLUSION}
+
+\sidestar{Leader}\\*
+Bestow on us, we pray, O Lord, \\*
+a spirit always pondering on what is right\\*
+and of hastening to carry it out,\\*
+and, since without you we cannot exist,\\*
+may we be enabled to live according to your will.\\*
+Through our Lord Jesus Christ, your Son,\\*
+who lives and reigns with you in the unity of the Holy Spirit,\\*
+God, for ever and ever.\\*
+\sidestar{All} Amen.
+
+\prayerheading{DISMISSAL}
+
+\sidestar{Leader}\\*
+May the Lord \rednote{+} bless us, \\*
+protect us from all evil \\*
+and bring us to everlasting life. \\*
+\sidestar{All} Amen.
+\end{document}
