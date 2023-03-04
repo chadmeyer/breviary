@@ -1,0 +1,306 @@
+\documentclass[letterpaper,14pt]{extarticle}
+\usepackage[fontsize=19pt]{scrextend}
+\usepackage[left=0.5in,right=0.3in,top=0.1in,bottom=0.5in]{geometry}
+%\usepackage[print]{booklet}
+\usepackage{xcolor}
+\usepackage{liturg}
+\usepackage{alltt}
+\usepackage{verse}
+%\usepackage{calc}
+%\usepackage{scrextend}
+
+\newcommand{\side}[1]{\flagverse{\textcolor{red}{\textit{#1}}:}}
+\newcommand{\sidestar}[1]{\textcolor{red}{\textit{#1}:}}
+\newcommand{\rednote}[1]{\textcolor{red}{#1}}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+\setlength{\vleftskip}{8pt}
+\setlength{\leftmargini}{4.5em}
+\newlength{\oldindent}
+
+
+\newcommand{\antiphon}[2]{
+	\setlength{\oldindent}{\vindent}
+	\setlength{\vindent}{0em}
+	\begin{verse}
+	\side{#1} \textbf{#2}
+	\end{verse}
+	\setlength{\vindent}{\oldindent}
+}
+\newcommand{\intercession}[2]{
+	\begin{tabular}[h]{r p{4.25in}}
+		\sidestar{Leader} & #1 \\
+		\sidestar{All} & #2
+	\end{tabular}}
+
+
+
+\newcommand{\psalm}[4][1]{%
+\setcounter{side}{#1}
+\psalmheading{#2}
+\antiphon{Leader #1}{#3}
+\begin{verse}
+#4
+\end{verse}
+\antiphon{All}{#3}
+}
+
+%\setpdftargetpages
+
+\begin{document}
+\hourheading{Saturday of the first week of Lent}
+\prayerheading{INTRODUCTION}
+\hspace{\leftmargini}\rednote{(Make sign of cross)}\\
+\intercession{God, \rednote{+} come to my assistance}
+{Lord, make haste to help me.}\\
+\intercession{Glory to the Father, and to the Son and to the Holy Spirit:}
+{as it was in the beginning, is now, and will be for ever. Amen.}
+
+\prayerheading{HYMN}
+\begin{verse}
+When I survey the wondrous cross \\*
+on which the Prince of glory died, \\*
+my richest gain I count but loss, \\*
+and pour contempt on all my pride.
+
+Forbid it, Lord, that I should boast \\*
+save in the death of Christ, my God! \\*
+All the vain things that charm me most, \\*
+I sacrifice them through his blood.
+
+See, from his head, his hands, his feet, \\*
+sorrow and love flow mingled down. \\*
+Did e'er such love and sorrow meet, \\*
+or thorns compose so rich a crown?
+
+Were the whole realm of nature mine, \\*
+that were a present far too small. \\*
+Love so amazing, so divine, \\*
+demands my soul, my life, my all.
+\end{verse}
+\pagebreak
+
+\prayerheading{PSALMODY}
+\psalmheading{Psalm 119 XIX (Koph)}
+\antiphon{Leader 1}{Dawn finds me ready to welcome you, my God.}
+\begin{verse}
+\side{Leader 1} I call with all my heart; Lord, hear me, \\*
+\side{Side 1} I will keep your commands. \\*
+I call upon you, save me \\*
+and I will do your will.
+
+\side{Side 2} I rise before dawn and cry for help, \\*
+I hope in your word.\\*
+My eyes watch through the night \\*
+to ponder your promise.
+
+\side{Side 1} In your love hear my voice, O Lord; \\*
+give me life by your decrees.\\*
+Those who harm me unjustly draw near: \\*
+they are far from your law.
+
+\side{Side 2} But you, O Lord, are close:\\* 
+your commands are truth.\\*
+Long have I known that your will \\*
+is established for ever.
+
+\side{Side 1} Glory to the Father, and to the Son,  \\*
+and to the Holy Spirit: \\*
+\side{Side 2} as it was in the beginning, is now,  \\*
+and will be for ever. Amen.
+\end{verse}
+\antiphon{All}{Dawn finds me ready to welcome you, my God.}
+\pagebreak
+\psalmheading{Exodus 15:1-4a, 8-13, 17-18}
+\antiphon{Leader 2}{The Lord is my strength, and I shall sing his praise, for he has become my Savior.}
+\begin{verse}
+\side{Leader 2} I will sing to the Lord, for he is gloriously triumphant; \\*
+\side{Side 2} horse and chariot he has cast into the sea.
+
+\side{Side 1} My strength and my courage is the Lord, \\*
+and he has been my savior.\\*
+He is my God, I praise him; \\*
+the God of my father, I extol him.
+
+\side{Side 2} The Lord is a warrior, \\*
+Lord is his name!\\*
+Pharaoh's chariots and army he hurled into the sea. \\*
+At a breath of your anger the waters piled up,\\*
+the flowing waters stood like a mound, \\*
+the flood waters congealed in the midst of the sea.
+
+\side{Side 1} The enemy boasted, ``I will pursue and overtake them; \\*
+I will divide the spoils and have my fill of them; \\*
+I will draw my sword; my hand shall despoil them!'' \\*
+When your wind blew, the sea covered them; \\*
+like lead they sank in the mighty waters.
+
+\side{Side 2} Who is like to you among the gods, O Lord? \\*
+Who is like to you, magnificent in holiness?\\*
+O terrible in renown, worker of wonders, \\*
+when you stretched out your right hand, the earth swallowed them!
+
+\side{Side 1} In your mercy you led the people you redeemed; \\*
+in your strength you guided them to your holy dwelling.
+
+\side{Side 2} And you brought them in and planted them on the mountain of your inheritance— \\*
+the place where you made your seat, O Lord,\\*
+the sanctuary, O Lord, which your hands established. \\*
+The Lord shall reign forever and ever.
+
+\side{Side 1} Glory to the Father, and to the Son, \\*
+and to the Holy Spirit: \\*
+\side{Side 2} as it was in the beginning, is now, \\*
+and will be for ever. Amen.
+\end{verse}
+\antiphon{All}{The Lord is my strength, and I shall sing his praise, for he has become my Savior.}
+
+\psalmheading{Psalm 117}
+\antiphon{Leader 1}{O praise the Lord, all you nations.}
+%\setlength{\stanzaskip}{0.25\baselineskip}
+%\vspace{-1.5\baselineskip}
+\begin{verse}
+%\setlength{\stanzaskip}{0.75\baselineskip}
+\side{Leader 1} O praise the Lord, all you nations, \\*
+\side{Side 1} acclaim him, all you peoples!
+
+\side{Side 2} Strong is his love for us; \\*
+he is faithful for ever.
+
+\side{Side 1} Glory to the Father, and to the Son, \\*
+and to the Holy Spirit: \\*
+\side{Side 2} as it was in the beginning, is now, \\*
+and will be for ever. Amen.
+\end{verse}
+\antiphon{All}{O praise the Lord, all you nations.}
+
+
+\psalmheading{\textbf{READING}\\Isaiah 1:16-18}
+\rednote{Reader:} 
+Wash yourselves clean!
+Put away your misdeeds from before my eyes;
+cease doing evil; learn to do good.
+Make justice your aim; redress the wronged,
+hear the orphan's plea, defend the widow.
+Come now, let us set things right,
+says the Lord:
+Though your sins be like scarlet,
+they may become white as snow;
+Though they be crimson red,
+they may become white as wool.
+
+%\newpage
+\prayerheading{RESPONSORY}
+\begin{verse}
+\side{Reader} God himself will set me free, from the hunter's snare. \\
+\side{All} God himself will set me free, from the hunter's snare.
+
+\side{Reader} From those who would trap me with lying words\\
+\side{All} and from the hunter's snare.
+
+\side{Reader} Glory to the Father, and to the Son, and to the Holy Spirit. \\
+\side{All} God himself will set me free, from the hunter's snare.
+\end{verse}
+
+\psalmheading{\textbf{Reflection}}
+\psalmheading{\textbf{CANTICLE OF ZECHARIAH}\\ Luke 1:68-79}
+\rednote{All stand}
+\antiphon{Leader}{If you want to be true children of your heavenly Father, then you must pray for those who persecute you and speak all kinds of evil against you, says the Lord.}
+%\setlength{\stanzaskip}{0.25\baselineskip}
+\begin{verse}
+\rednote{(Make sign of cross)}\\
+\side{All} Blessed \rednote{+} be the Lord, the God of Israel; \\*
+he has come to his people and set them free.
+
+He has raised up for us a mighty savior, \\*
+born of the house of his servant David.
+
+Through his holy prophets he promised of old \\*
+  that he would save us from our enemies, \\*
+  from the hands of all who hate us.
+
+He promised to show mercy to our fathers \\*
+and to remember his holy covenant.
+
+This was the oath he swore to our father Abraham: \\*
+to set us free from the hands of our enemies, \\*
+free to worship him without fear, \\*
+holy and righteous in his sight \\*
+   all the days of our life.
+
+You, my child, shall be called the prophet of the Most High; \\*
+for you will go before the Lord to prepare his way, \\*
+to give his people knowledge of salvation \\*
+by the forgiveness of their sins.
+
+In the tender compassion of our God \\*
+the dawn from on high shall break upon us, \\*
+to shine on those who dwell in darkness and the shadow of death, \\*
+and to guide our feet into the way of peace.
+
+Glory to the Father, and to the Son, \\*
+and to the Holy Spirit: \\*
+as it was in the beginning, is now, \\*
+and will be for ever. Amen.
+\end{verse}
+%\setlength{\stanzaskip}{0.75\baselineskip}
+\antiphon{All}{If you want to be true children of your heavenly Father, then you must pray for those who persecute you and speak all kinds of evil against you, says the Lord.}
+
+\prayerheading{INTERCESSIONS}
+\intercession{To make us his new creation, Christ the Lord gave us the waters of rebirth and spread the table of his body and his word. Let us call upon him and say:}
+{\textit{Lord, renew us in your grace.}}
+
+\intercession{Jesus, meek and humble of heart, clothe us with compassion, kindness and humility,}
+{make us want to be patient with everyone.}
+
+\intercession{Teach us to be true neighbors to all in trouble and distress,}
+{and so imitate you, the Good Samaritan.}
+
+\intercession{May the Blessed Virgin, your Mother, pray for all those vowed to a life of virginity,}
+{that they may deepen their dedication to you and to the Church.}
+
+\intercession{Grant us the gift of your mercy,}
+{forgive our sins and remit their punishment.}
+
+\prayerheading{THE LORD'S PRAYER}
+%\antiphon{Leader}{Remember us, Lord, when you come to your kingdom and teach us how to pray:}
+	
+\begin{verse}
+	\side{All} Our Father, who art in heaven,\\ %[$\cdots$] \\
+hallowed be thy name; \\
+thy kingdom come; \\
+thy will be done on earth \\
+as it is in heaven. \\
+Give us this day our daily bread; \\
+and forgive us our trespasses \\
+as we forgive those who trespass against us; \\
+and lead us not into temptation, \\
+but deliver us from evil.
+\end{verse}
+
+\psalmheading{CONCLUSION}
+
+\sidestar{President}\\*
+Turn our hearts to you, eternal Father, \\*
+and grant that, seeking always the one thing necessary\\*
+and carrying out works of charity,\\*
+we may be dedicated to your worship.\\*
+Through our Lord Jesus Christ, your Son,\\*
+who lives and reigns with you in the unity of the Holy Spirit,\\*
+God, for ever and ever.\\*
+\sidestar{All} Amen.
+
+\prayerheading{DISMISSAL}
+
+\sidestar{President}
+May the Lord \rednote{+} bless us, \\*
+protect us from all evil \\*
+and bring us to everlasting life. \\*
+\sidestar{All} Amen.
+
+\sidestar{President}
+May the souls of the faithful departed,  \\*
+through the mercy of God, rest in peace. \\*
+\sidestar{All} Amen.
+
+\end{document}
