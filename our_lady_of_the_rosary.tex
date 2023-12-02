@@ -1,0 +1,209 @@
+\documentclass[letterpaper,14pt]{extarticle}
+\usepackage[fontsize=18pt]{scrextend}
+\usepackage[left=0.7in,right=0.3in,top=0.1in,bottom=0.5in]{geometry}
+%\usepackage[print]{booklet}
+\usepackage{xcolor}
+\usepackage{liturg}
+\usepackage{alltt}
+\usepackage{verse}
+%\usepackage{calc}
+%\usepackage{scrextend}
+
+\newcommand{\side}[1]{\flagverse{\textcolor{red}{\textit{#1}}:}}
+\newcommand{\sidestar}[1]{\textcolor{red}{\textit{#1}:}}
+\newcommand{\rednote}[1]{\textcolor{red}{#1}}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+\setlength{\vleftskip}{8pt}
+\setlength{\leftmargini}{4.5em}
+\newlength{\oldindent}
+
+
+\newcommand{\antiphon}[2]{
+	\setlength{\oldindent}{\vindent}
+	\setlength{\vindent}{0em}
+	\begin{verse}
+	\side{#1} \textbf{#2}
+	\end{verse}
+	\setlength{\vindent}{\oldindent}
+}
+\newcommand{\intercession}[2]{
+	\begin{tabular}[h]{r p{4.25in}}
+		\sidestar{Leader} & #1 \\
+		\sidestar{All} & #2
+	\end{tabular}}
+
+
+
+\newcommand{\psalm}[4][1]{%
+\setcounter{side}{#1}
+\psalmheading{#2}
+\antiphon{Leader #1}{#3}
+\begin{verse}
+#4
+\end{verse}
+\antiphon{All}{#3}
+}
+
+%\setpdftargetpages
+
+\begin{document}
+\include{offices/sunday_I_morning}
+\renewcommand{\antiphonone}{The angel Gabriel brought God's message to Mary, and she concieved by the power of the Holy Spirit.}
+\renewcommand{\antiphontwo}{Mary entered the house of Zechariah, and greeted Elizabeth.}
+\renewcommand{\antiphonthree}{She gave birth to her firstborn son, and laid him in a manger.}
+\hourheading{Feast of Our Lady of the Rosary}
+\prayerheading{INTRODUCTION}
+\hspace{\leftmargini}\rednote{(Make sign of cross)}\\
+\intercession{God, \rednote{+} come to my assistance}
+{Lord, make haste to help me.}\\
+\intercession{Glory to the Father, and to the Son and to the Holy Spirit:}
+{as it was in the beginning, is now, and will be for ever. Amen.}
+
+%\prayerheading{PSALMODY}
+\psalmheading{\psalmoneheading}
+\antiphon{Leader 1}{\antiphonone}
+\begin{verse}
+\input{psalms/psalm63.tex}
+\end{verse}
+\antiphon{All}{\antiphonone}
+
+\psalmheading{\psalmtwoheading}
+\antiphon{Leader 2}{\antiphontwo}
+\begin{verse}
+\input{psalms/daniel3_57-86.tex}
+\end{verse}
+\antiphon{All}{\antiphontwo}
+
+\psalmheading{\psalmthreeheading}
+\antiphon{Leader 1}{\antiphonthree}
+\begin{verse}
+\input{psalms/psalm149.tex}
+\end{verse}
+\antiphon{All}{\antiphonthree}
+
+\psalmheading{\textbf{READING}\\Gal 4:4-5}
+\rednote{Reader:} But when the fullness of time had come, God sent his Son, born of a woman, born under the law, to ransom those under the law, so that we might receive adoption.
+%\newpage
+\prayerheading{RESPONSORY}
+\begin{verse}
+\side{Reader} The Word became flesh \\
+and made his dwelling among us. \\
+\side{All} The Word became flesh
+and made his dwelling among us. 
+
+\side{Reader} He was in the beginning with God. \\
+\side{All} and made his dwelling among us. 
+
+\side{Reader} Glory to the Father, and to the Son, and to the Holy Spirit. \\
+\side{All} The Word became flesh
+and made his dwelling among us. 
+\end{verse}
+
+\psalmheading{\textbf{Reflection}}
+\psalmheading{\textbf{CANTICLE OF ZECHARIAH}\\ Luke 1:68-79}
+\rednote{All stand}
+\antiphon{Leader}{Blessed Mother and inviolate virgin, glorious Queen of the world, may all who celebrate your festival of the most holy Rosary know your protection.}
+%\setlength{\stanzaskip}{0.25\baselineskip}
+\begin{verse}
+\rednote{(Make sign of cross)}\\
+\side{All} Blessed \rednote{+} be the Lord, the God of Israel; \\*
+he has come to his people and set them free.
+
+He has raised up for us a mighty savior, \\*
+born of the house of his servant David.
+
+Through his holy prophets he promised of old \\*
+  that he would save us from our enemies, \\*
+  from the hands of all who hate us.
+
+He promised to show mercy to our fathers \\*
+and to remember his holy covenant.
+
+This was the oath he swore to our father Abraham: \\*
+to set us free from the hands of our enemies, \\*
+free to worship him without fear, \\*
+holy and righteous in his sight \\*
+   all the days of our life.
+
+You, my child, shall be called the prophet of the Most High; \\*
+for you will go before the Lord to prepare his way, \\*
+to give his people knowledge of salvation \\*
+by the forgiveness of their sins.
+
+In the tender compassion of our God \\*
+the dawn from on high shall break upon us, \\*
+to shine on those who dwell in darkness and the shadow of death, \\*
+and to guide our feet into the way of peace.
+
+Glory to the Father, and to the Son, \\*
+and to the Holy Spirit: \\*
+as it was in the beginning, is now, \\*
+and will be for ever. Amen.
+\end{verse}
+%\setlength{\stanzaskip}{0.75\baselineskip}
+\antiphon{All}{Blessed Mother and inviolate virgin, glorious Queen of the world, may all who celebrate your festival of the most holy Rosary know your protection.}
+
+\prayerheading{INTERCESSIONS}
+\intercession{Trusting in the Virgin who is full of grace and Mother of our Savior we make our prayers to God.}
+{\textit{Lord, hear our prayer.}}
+
+\intercession{You chose Mary to become the mother of Christ our Savior;}
+{may our desires and actions be according to your will.}
+
+\intercession{With great rejoicing, Mary glorified you;}
+{teach us to give thanks for the gifts you have given us.}
+
+\intercession{By the power of the Holy Spirit Mary brought forth your Son;}
+{may we give birth to your Word in our world.}
+
+\intercession{The Virgin Mary presented the Redeemer of the World in the temple;}
+{may the redeemed of every nation come to the temple of your glory.}
+
+\intercession{After three days, she found her Son who had been lost;}
+{may all the departed be gathered in the eternal dwelling of heaven.}
+
+\prayerheading{THE LORD'S PRAYER}
+%\antiphon{Leader}{Gathering our prayer and praises into one, let us offer the prayer Christ himself taught us:}
+	
+\begin{verse}
+	\side{All} Our Father, who art in heaven,\\ %[$\cdots$] \\
+hallowed be thy name; \\
+thy kingdom come; \\
+thy will be done on earth \\
+as it is in heaven. \\
+Give us this day our daily bread; \\
+and forgive us our trespasses \\
+as we forgive those who trespass against us; \\
+and lead us not into temptation, \\
+but deliver us from evil.
+\end{verse}
+
+\psalmheading{CONCLUSION}
+
+\sidestar{President}\\*
+
+Pour forth, we beseech you, O Lord, \\*
+your grace into our hearts, \\*
+that we, to whom the Incarnation of Christ your Son \\*
+was made known by the message of an Angel, \\*
+may, by his Passion and Cross, \\*
+be brought to the glory of his Resurrection. \\*
+Who lives and reigns with you in the unity of the Holy Spirit,\\*
+God, for ever and ever.\\*
+\sidestar{All} Amen.
+
+\prayerheading{DISMISSAL}
+
+\sidestar{President}
+May the Lord \rednote{+} bless us, \\*
+protect us from all evil \\*
+and bring us to everlasting life. \\*
+\sidestar{All} Amen.
+
+\sidestar{President}
+May the souls of the faithful departed,  \\*
+through the mercy of God, rest in peace. \\*
+\sidestar{All} Amen.
+
+\end{document}
